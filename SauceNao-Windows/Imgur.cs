@@ -9,7 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace SauceNao_Windows {
-  static class Imgur {
+  public static class Imgur {
     public static string Upload(string path, string apiKey) {
       using (var w = new WebClient()) {
         w.Headers.Add("Authorization: Client-ID " + apiKey);

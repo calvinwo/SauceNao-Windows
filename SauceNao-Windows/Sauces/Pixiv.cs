@@ -5,7 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace SauceNao_Windows.Sauces {
-  class Pixiv : Sauce {
+  public class Pixiv : Sauce {
     static string ENDPOINT = "http://www.pixiv.net/member_illust.php?mode=medium&illust_id=";
     public new string Url {
       get { return GetUrl(); }

@@ -6,7 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace SauceNao_Windows {
-  class Response {
+  public class Response {
     private dynamic data;
     private Type    provider;
 
@@ -16,7 +16,7 @@ namespace SauceNao_Windows {
     }
 
     private Type guessTheProvider() {
-      Type[] providers = { typeof(Pixiv) };
+      Type[] providers = { typeof(Pixiv), typeof(Seiga), typeof(Booru), typeof(Nijie), typeof(bcy) };
 
       foreach(Type provider in providers) {
         bool isTheRightAdapter = (bool) provider.GetMethod("IsTheRightAdapterFor").Invoke(null, new object[] { data });

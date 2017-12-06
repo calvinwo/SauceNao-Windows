@@ -5,14 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace SauceNao_Windows {
-  class Sauce {
+  public class Sauce {
     public string Title, AuthorName;
     public int     SauceId, AuthorId;
     public string Url {
       get { return GetUrl(); }
     }
 
-    protected Sauce(string title, int sauceId, string authorName, int authorId) {
+    protected Sauce(string title = "", int sauceId = 0, string authorName = "", int authorId = 0) {
       Title      = title;
       SauceId    = sauceId;
       AuthorName = authorName;

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 using Newtonsoft.Json;
 
 namespace SauceNao_Windows {
-  class SauceNao {
+  public class SauceNao {
     private static string ENDPOINT = "https://saucenao.com/search.php";
     private        string ApiKey;
 

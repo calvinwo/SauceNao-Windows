@@ -89,6 +89,14 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Imgur.cs" />
+    <Compile Include="Sauces\AniDB.cs" />
+    <Compile Include="Sauces\bcy.cs" />
+    <Compile Include="Sauces\Booru.cs" />
+    <Compile Include="Sauces\DeviantArt.cs" />
+    <Compile Include="Sauces\IMDB.cs" />
+    <Compile Include="Sauces\MangaUpdates.cs" />
+    <Compile Include="Sauces\Mugimugi.cs" />
+    <Compile Include="Sauces\Nijie.cs" />
     <Compile Include="Sauces\Pixiv.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -96,6 +104,7 @@
     <Compile Include="Result.cs" />
     <Compile Include="Sauce.cs" />
     <Compile Include="SauceNao.cs" />
+    <Compile Include="Sauces\Seiga.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
@@ -114,6 +123,9 @@
       <ProductName>.NET Framework 3.5 SP1</ProductName>
       <Install>false</Install>
     </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="samples.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
